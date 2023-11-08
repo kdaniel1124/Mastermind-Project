@@ -26,8 +26,8 @@ namespace Mastermind
             {
                 Console.Write($"{item} ");
             };
-            Console.WriteLine();
 
+            Console.WriteLine();
             Console.WriteLine("You will now pick four colors, attempting to guess the answer");
 
             int roundCount = 1;
@@ -76,7 +76,10 @@ namespace Mastermind
                 {
                     youWon = true;
                 }
-                roundCount++;
+                else
+                {
+                    roundCount++;
+                }
             }
 
             if (youWon)
